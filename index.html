@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- How to edit this site: see README.md. Publications live in assets/publications.js.
+     After changing style.css, main.js or publications.js, bump the ?v= number on their links below so browsers reload them. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ye Liu · Research Scientist, Salesforce AI Research</title>
+<meta name="description" content="Ye Liu is a Research Scientist at Salesforce AI Research working on large language models: self-improving agents, retrieval and embedding models for text, code and multimodal data, reasoning, and code intelligence.">
+<!-- GitHub Pages project URL -->
+<link rel="canonical" href="https://yeliu918.github.io/ye-liu-site/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141517" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://yeliu918.github.io/ye-liu-site/">
+<meta property="og:title" content="Ye Liu · Research Scientist, Salesforce AI Research">
+<meta property="og:description" content="Large language models, agents, retrieval &amp; embeddings, code intelligence.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ye Liu · Research Scientist, Salesforce AI Research">
+<meta name="twitter:description" content="Large language models, agents, retrieval &amp; embeddings, code intelligence.">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=20261020">
+<!-- Without JavaScript the paper list (the #pub-* targets) is not rendered, so links to it are shown as plain text. -->
+<noscript><style>a[href^="#pub-"] { pointer-events: none; color: inherit; text-decoration: none; }</style></noscript>
+<script>
+  /* Preload both fonts (each is used above the fold). Skipped on file://, where a font preload is a blocked cross-origin request. */
+  if (location.protocol !== "file:") ["inter", "source-serif-4"].forEach(function (f) {
+    var l = document.createElement("link");
+    l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = ""; l.href = "assets/fonts/" + f + "-latin-wght-normal.woff2";
+    document.head.appendChild(l);
+  });
+  /* Theme before first paint: the visitor's saved choice, otherwise the OS setting. */
+  try {
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  } catch (e) {}
+</script>
+<!-- Structured profile data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ye Liu",
+  "url": "https://yeliu918.github.io/ye-liu-site/",
+  "jobTitle": "Research Scientist",
+  "worksFor": { "@type": "Organization", "name": "Salesforce", "department": { "@type": "Organization", "name": "Salesforce AI Research" } },
+  "workLocation": { "@type": "Place", "name": "Palo Alto, California" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Illinois Chicago" },
+    { "@type": "CollegeOrUniversity", "name": "Northeastern University (China)" }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=xuzCJokAAAAJ",
+    "https://www.linkedin.com/in/ye-liu-yliu279/",
+    "https://github.com/yeliu918"
+  ],
+  "knowsAbout": ["Large language models", "LLM reasoning", "Information retrieval", "Text and code embeddings", "Multimodal embeddings", "Code intelligence", "AI agents", "Question answering", "Text generation", "Graph mining"]
+}
+</script>
+</head>
+<body>
+<!-- Icon sprite: reference with <svg><use href="#i-name"/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-scholar" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1.5 9.6h21L12 2Z"/><circle fill="currentColor" cx="12" cy="16" r="6"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle fill="currentColor" cx="8.2" cy="7.9" r="1.4"/><path fill="currentColor" d="M7 10.2h2.4V17H7zM11 10.2h2.3v1c.5-.8 1.4-1.2 2.5-1.2 2 0 3 1.2 3 3.4V17h-2.4v-3.3c0-1.1-.4-1.7-1.3-1.7-1 0-1.7.7-1.7 1.8V17H11z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 6.5 8.2 6.3 8.2-6.3"/></g></symbol>
+  <symbol id="i-cv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M8.5 13h7M8.5 16.5h5"/></g></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 16 16 8M9.5 8H16v6.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></g></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="#top" aria-label="Ye Liu, back to top">Ye Liu</a>
+    <nav class="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#selected">Selected</a></li>
+        <li><a href="#publications">Publications</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden>
+      <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" aria-labelledby="name">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1 id="name">Ye Liu</h1>
+        <p class="role">Research Scientist<span class="sep"> · </span><span class="org">Salesforce AI Research</span></p>
+        <p class="affiliation">Large language models, agents, retrieval &amp; embeddings, code intelligence · <span>Palo Alto, California</span></p>
+        <ul class="profile-links" aria-label="Profiles and contact">
+          <li><a href="https://scholar.google.com/citations?user=xuzCJokAAAAJ" rel="me"><svg aria-hidden="true"><use href="#i-scholar"/></svg>Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/ye-liu-yliu279/" rel="me"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+          <!-- GitHub profile -->
+          <li><a href="https://github.com/yeliu918" rel="me"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+          <!-- Hidden until filled in (see [data-todo] in style.css): set the href, then delete data-todo from the <li>. -->
+          <li data-todo><a href="mailto:EMAIL"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a></li>
+          <li data-todo><a href="assets/cv.pdf"><svg aria-hidden="true"><use href="#i-cv"/></svg>CV</a></li>
+        </ul>
+      </div>
+      <!-- PHOTO: assets/photo.jpg (square, 480x480). To go back to initials, replace the <img> with <span class="monogram" role="img" aria-label="Ye Liu (initials)">YL</span>. -->
+      <div class="avatar"><img src="assets/photo.jpg" alt="Portrait of Ye Liu" width="480" height="480"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="about-h">About</h2></div>
+      <p class="about-text">I am a Senior Research Scientist at Salesforce AI Research in Palo Alto, working on large language models:</p>
+      <ul class="about-areas">
+        <li><strong>Self-improving agents</strong></li>
+        <li><strong>Retrieval and embedding models</strong> for text, code and multimodal data</li>
+        <li><strong>Reasoning</strong></li>
+        <li><strong>Code intelligence</strong></li>
+      </ul>
+      <p class="about-text">I was a lead contributor to the SFR-Embedding models, which ranked first on the MTEB leaderboard, overall and on retrieval, at release in 2024, and led CodeXEmbed, a code embedding family reported to rank first on the CoIR benchmark. Many of these models are openly released and have been downloaded millions of times on Hugging Face. Before Salesforce, I received my Ph.D. in Computer Science from the University of Illinois Chicago, where I worked on question answering, text generation and graph mining.</p>
+    </div>
+  </section>
+
+  <!-- ============ HIGHLIGHTS ============
+       The cards are rendered by main.js from the "highlights" and "release" fields in publications.js
+       (HIGHLIGHTS and RELEASES in build_data.py). The cards typed below are only a copy for visitors
+       without JavaScript; keep them in sync (README: "Static copy of the cards"). -->
+  <section class="section" id="highlights" aria-labelledby="hl-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="hl-h">Highlights</h2><p class="section-lede">Models and benchmarks from papers I co-authored: leaderboard results and open-source adoption. Each result links to its source.</p></div>
+      <!-- static:hl-cards -->
+      <div class="hl-cards" id="hl-cards"><ul class="ac-grid">
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-sfr-embedding-2-2024">SFR-Embedding-2_R</a></h3><p class="ac-kind">text embeddings</p></div><div class="ac-result"><p class="ac-bench"><b>MTEB</b> <span class="dot" aria-hidden="true">·</span> Overall &amp; Retrieval</p><p class="ac-claim"><a href="https://huggingface.co/spaces/mteb/leaderboard/raw/c83ff74f9f40a9cc85bda773cdfb639b0f4d82aa/boards_data/en/data_overall/default.jsonl">Ranked first at release, <span class="nowrap">Jun 2024<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><p class="ac-dl"><a href="https://huggingface.co/Salesforce/SFR-Embedding-2_R" title="All-time downloads (Hugging Face API, Oct 2026): Salesforce/SFR-Embedding-2_R: 4,320,028"><b>4.3M</b> downloads<span class="sr-only"> of SFR-Embedding-2_R on Hugging Face</span></a><span class="ac-bar" style="--v:100%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-first author (equal contribution)</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for SFR-Embedding-2_R</span></summary><div class="ac-detail"><p class="note">Ranked first overall and on the Retrieval tab of the MTEB leaderboard at release (Jun 2024); still first overall (avg. 70.31) in the official snapshots of Jul 7-12, 2024.</p></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-sfr-embedding-mistral-2024">SFR-Embedding-Mistral</a></h3><p class="ac-kind">text embeddings</p></div><div class="ac-result"><p class="ac-bench"><b>MTEB</b> <span class="dot" aria-hidden="true">·</span> Overall &amp; Retrieval</p><p class="ac-claim"><a href="https://arxiv.org/abs/2404.05961">Ranked first at release, <span class="nowrap">Jan 2024<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><p class="ac-dl"><a href="https://huggingface.co/Salesforce/SFR-Embedding-Mistral" title="All-time downloads (Hugging Face API, Oct 2026): Salesforce/SFR-Embedding-Mistral: 1,097,934"><b>1.1M</b> downloads<span class="sr-only"> of SFR-Embedding-Mistral on Hugging Face</span></a><span class="ac-bar" style="--v:25.4%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-first author (lead contributor)</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for SFR-Embedding-Mistral</span></summary><div class="ac-detail"><p class="note">Ranked first overall and on the Retrieval tab of the MTEB leaderboard at release (Jan 2024); still first overall (avg. 67.56) as of 2024-03-29 per Table 9 of the LLM2Vec paper.</p></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-codexembed-2025">CodeXEmbed</a> <span class="ac-repo">SFR-Embedding-Code</span></h3><p class="ac-kind">code embeddings, 2B + 400M</p></div><div class="ac-result"><p class="ac-bench"><b>CoIR</b> <span class="dot" aria-hidden="true">·</span> Unreleased 7B model</p><p class="ac-claim"><a href="https://arxiv.org/html/2411.12644v3">Ranked first, as reported in the paper <span class="nowrap">(Aug 2025)<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><p class="ac-dl"><a href="https://huggingface.co/Salesforce/SFR-Embedding-Code-2B_R" title="All-time downloads (Hugging Face API, Oct 2026): Salesforce/SFR-Embedding-Code-2B_R: 450,596 · Salesforce/SFR-Embedding-Code-400M_R: 289,930"><b>741K</b> downloads<span class="sr-only"> of CodeXEmbed on Hugging Face</span></a><span class="ac-bar" style="--v:17.1%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">First author</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for CodeXEmbed</span></summary><div class="ac-detail"><p class="note">As reported in the paper (v3, Aug 2025): the unreleased 7B model ranks first on the CoIR leaderboard.</p><p class="note">Downloads by repository:</p><ul class="note ac-repos"><li>SFR-Embedding-Code-2B_R <span>450,596</span></li><li>SFR-Embedding-Code-400M_R <span>289,930</span></li></ul></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-vlm2vec-v2-2025">VLM2Vec-V2</a></h3><p class="ac-kind">multimodal embeddings</p></div><div class="ac-result"><p class="ac-bench"><b>MMEB-V2</b></p><p class="ac-claim"><a href="https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard">Ranked first at release, <span class="nowrap">Jul 2025<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><p class="ac-dl"><a href="https://huggingface.co/VLM2Vec/VLM2Vec-V2.0" title="All-time downloads (Hugging Face API, Oct 2026): VLM2Vec/VLM2Vec-V2.0: 129,348"><b>129K</b> downloads<span class="sr-only"> of VLM2Vec-V2 on Hugging Face</span></a><span class="ac-bar" style="--v:2.99%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-author</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for VLM2Vec-V2</span></summary><div class="ac-detail"><p class="note">Ranked first on the MMEB-V2 leaderboard (video, image and visual-document tasks) at release (Jul 2025).</p></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-b3-2025">B3</a></h3><p class="ac-kind">multimodal embeddings, 2B + 7B</p></div><div class="ac-result"><p class="ac-bench"><b>MMEB</b></p><p class="ac-claim"><a href="https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard">Ranked first at release, <span class="nowrap">May 2025<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><p class="ac-dl"><a href="https://huggingface.co/raghavlite/B3_Qwen2_2B" title="All-time downloads (Hugging Face API, Oct 2026): raghavlite/B3_Qwen2_2B: 42,835 · raghavlite/B3_Qwen2_7B: 4,628"><b>47K</b> downloads<span class="sr-only"> of B3 on Hugging Face</span></a><span class="ac-bar" style="--v:1.10%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-author</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for B3</span></summary><div class="ac-detail"><p class="note">Ranked first on the MMEB leaderboard at release (May 2025).</p><p class="note">Downloads by repository:</p><ul class="note ac-repos"><li>B3_Qwen2_2B <span>42,835</span></li><li>B3_Qwen2_7B <span>4,628</span></li></ul></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-judgerank-2024">JudgeRank</a></h3><p class="ac-kind">agentic LLM reranker</p></div><div class="ac-result"><p class="ac-bench"><b>BRIGHT</b></p><p class="ac-claim"><a href="https://arxiv.org/html/2411.00142v1">Top position, as reported in the paper <span class="nowrap">(Oct 2024)<span class="sr-only"> (source)</span><svg aria-hidden="true"><use href="#i-ext"></use></svg></span></a></p></div><div class="ac-foot"><span class="ac-role">Co-author</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for JudgeRank</span></summary><div class="ac-detail"><p class="note">As reported in the paper: top position among 89 models on the BRIGHT reasoning-intensive retrieval leaderboard.</p></div></details></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-folio-2024">FOLIO</a></h3><p class="ac-kind">reasoning benchmark (dataset)</p></div><p class="ac-dl"><a href="https://huggingface.co/datasets/yale-nlp/FOLIO" title="All-time downloads (Hugging Face API, Oct 2026): yale-nlp/FOLIO: 74,825"><b>75K</b> downloads<span class="sr-only"> of FOLIO on Hugging Face</span></a><span class="ac-bar" style="--v:1.73%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-author</span></div></li>
+<li class="ac"><div class="ac-head"><h3 class="ac-name"><a href="#pub-swerank-2026">SweRank</a></h3><p class="ac-kind">code retrievers + rerankers, 4 models</p></div><p class="ac-dl"><a href="https://huggingface.co/Salesforce/SweRankEmbed-Small" title="All-time downloads (Hugging Face API, Oct 2026): Salesforce/SweRankEmbed-Small: 31,237 · Salesforce/SweRankEmbed-Large: 7,879 · Salesforce/SweRankLLM-Small: 2,308 · Salesforce/SweRankLLM-Large: 729"><b>42K</b> downloads<span class="sr-only"> of SweRank on Hugging Face</span></a><span class="ac-bar" style="--v:0.976%" aria-hidden="true"><i></i></span></p><div class="ac-foot"><span class="ac-role">Co-author</span> <span class="dot" aria-hidden="true">·</span> <details><summary>Details<span class="sr-only"> for SweRank</span></summary><div class="ac-detail"><p class="note">Downloads by repository:</p><ul class="note ac-repos"><li>SweRankEmbed-Small <span>31,237</span></li><li>SweRankEmbed-Large <span>7,879</span></li><li>SweRankLLM-Small <span>2,308</span></li><li>SweRankLLM-Large <span>729</span></li></ul></div></details></div></li>
+</ul><p class="ac-caption">Hugging Face downloads, all-time, as of Oct 2026</p></div>
+      <!-- /static:hl-cards -->
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH THEMES ============
+       Each theme links to papers by id (#pub-<id> from publications.js).
+       data-topics lists the topic keys whose filter buttons appear under the theme. -->
+  <section class="section" id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="research-h">Research themes</h2><p class="section-lede">Four threads that run through my work, each with a few representative papers.</p></div>
+      <div class="themes">
+        <article class="theme" data-topics="reasoning agents">
+          <h3>Reasoning &amp; self-improving agents</h3>
+          <p>Making LLMs reason more reliably through verification, self-refinement and memory distilled from their own experience, and measuring logical reasoning with human-written benchmarks.</p>
+          <ul class="theme-papers">
+            <li><a href="#pub-pmd-2026">Procedural Memory Distillation</a> <span>NeurIPS 2026</span></li>
+            <li><a href="#pub-collab-verification-2024">Collaborative Verification</a> <span>arXiv 2024</span></li>
+            <li><a href="#pub-folio-2024">FOLIO</a> <span>EMNLP 2024</span></li>
+          </ul>
+        </article>
+        <article class="theme" data-topics="retrieval">
+          <h3>Retrieval &amp; embedding models</h3>
+          <p>General-purpose embedding and reranking models for text, code, images and video, from training recipes and hard-batch mining to openly released models.</p>
+          <ul class="theme-papers">
+            <li><a href="#pub-sfr-embedding-2-2024">SFR-Embedding-2</a> <span>2024</span></li>
+            <li><a href="#pub-codexembed-2025">CodeXEmbed</a> <span>COLM 2025</span></li>
+            <li><a href="#pub-vlm2vec-v2-2025">VLM2Vec-V2</a> <span>TMLR 2026</span></li>
+            <li><a href="#pub-judgerank-2024">JudgeRank</a> <span>arXiv 2024</span></li>
+          </ul>
+        </article>
+        <article class="theme" data-topics="code">
+          <h3>Code intelligence</h3>
+          <p>Ranking and retrieval for software engineering, such as localizing issues in real repositories, and evaluating how well LLMs generate and judge code.</p>
+          <ul class="theme-papers">
+            <li><a href="#pub-swerank-2026">SweRank</a> <span>ICLR 2026</span></li>
+            <li><a href="#pub-swerank-plus-2025">SweRank+</a> <span>arXiv 2025</span></li>
+            <li><a href="#pub-l2ceval-2024">L2CEval</a> <span>TACL 2024</span></li>
+            <li><a href="#pub-llm-eval-codesum-2025">LLMs as code-summary evaluators</a> <span>IEEE TSE 2025</span></li>
+          </ul>
+        </article>
+        <article class="theme" data-topics="qa nlg graph">
+          <h3>Question answering, parsing &amp; generation</h3>
+          <p>Earlier work on open-domain and knowledge-base QA, unified semantic parsing, knowledge-grounded text generation and graph mining.</p>
+          <ul class="theme-papers">
+            <li><a href="#pub-uni-parser-2022">Uni-Parser</a> <span>EMNLP 2022</span></li>
+            <li><a href="#pub-dhr-2021">Dense Hierarchical Retrieval</a> <span>Findings of EMNLP 2021</span></li>
+            <li><a href="#pub-kg-bart-2021">KG-BART</a> <span>AAAI 2021</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED PUBLICATIONS (rendered from publications.js: selected:true) ============ -->
+  <section class="section" id="selected" aria-labelledby="selected-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="selected-h">Selected publications</h2><p class="section-lede">Newest first. My name is in <b class="me">bold</b>; <span class="role-mark">First author</span> / <span class="role-mark">Co-first author</span> mark papers where I am first or equal-contribution first author.</p></div>
+      <noscript><p class="noscript">This list needs JavaScript. All papers are on <a href="https://scholar.google.com/citations?user=xuzCJokAAAAJ">Google Scholar</a>.</p></noscript>
+      <ol class="pub-list selected-list" id="selected-list"></ol>
+      <p class="footnote eq-note" hidden>* Equal contribution / lead contributor.</p>
+    </div>
+  </section>
+
+  <!-- ============ ALL PUBLICATIONS (rendered from publications.js) ============ -->
+  <section class="section" id="publications" aria-labelledby="pubs-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="pubs-h" tabindex="-1">All publications</h2></div>
+      <noscript>
+        <p class="noscript">The publication list is generated with JavaScript. See the complete, up-to-date list on
+          <a href="https://scholar.google.com/citations?user=xuzCJokAAAAJ">Google Scholar</a>.</p>
+      </noscript>
+      <div class="filters" id="filters" hidden>
+        <div class="filter-bar">
+          <div class="search">
+            <label class="sr-only" for="pub-search">Search publications by title, author, venue or topic</label>
+            <svg aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="pub-search" type="search" placeholder="Search papers" autocomplete="off">
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+          <button type="button" class="chip-clear" id="clear-filters" hidden>Clear filters</button>
+          <nav class="year-index" id="year-index" aria-label="Jump to year"></nav>
+        </div>
+        <div class="chip-row" role="group" aria-label="Filter by topic" id="topic-chips"></div>
+      </div>
+      <div id="pub-groups"></div>
+      <p class="footnote eq-note" hidden>* Equal contribution / lead contributor.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bar">
+    <p>© Ye Liu · Last updated October 2026</p>
+    <p><a href="https://scholar.google.com/citations?user=xuzCJokAAAAJ">Google Scholar</a> · <a href="https://www.linkedin.com/in/ye-liu-yliu279/">LinkedIn</a> · <a href="https://github.com/yeliu918">GitHub</a> · <a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<!-- Figure viewer, filled and opened by main.js when a publication figure is clicked.
+     The caption repeats the image's alt text, so it is hidden from screen readers. -->
+<dialog class="viewer" id="fig-viewer" aria-labelledby="fig-title">
+  <div class="viewer-body">
+    <div class="viewer-head">
+      <div><p class="pub-meta" id="fig-meta"></p><h2 class="viewer-title" id="fig-title"></h2></div>
+      <button type="button" class="viewer-close">Close</button>
+    </div>
+    <div class="viewer-frame"></div>
+    <p class="viewer-cap" id="fig-cap" aria-hidden="true"></p>
+    <p class="pub-links" id="fig-links"></p>
+  </div>
+</dialog>
+
+<script src="assets/publications.js?v=20261020"></script>
+<script src="assets/main.js?v=20261020"></script>
+</body>
+</html>

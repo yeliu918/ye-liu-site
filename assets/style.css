@@ -465,3 +465,9 @@ main > :last-child { padding-bottom: 36px; }
   .tldr { display: block; }
   body { background: #fff; color: #000; }
 }
+
+/* Recent research announcement */
+.news-item { margin-top: 10px; padding-left: 12px; border-left: 2px solid var(--accent); }
+.news-meta { color: var(--muted); font-size: 12px; font-weight: 600; }
+.news-title { margin-top: 3px; font-weight: 600; }
+.news-summary { margin-top: 3px; color: var(--ink-2); }

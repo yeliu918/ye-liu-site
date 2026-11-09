@@ -196,7 +196,7 @@
   /* ---------- Selected publications ---------- */
 
   function renderSelected() {
-    $("#selected-list").innerHTML = PUBS.filter(function (p) { return p.selected; }).sort(byYearDesc)
+    $("#selected-list").innerHTML = PUBS.filter(function (p) { return p.selected && p.id !== "judgerank-2024" && p.id !== "folio-2024"; }).sort(byYearDesc).slice(0, 6)
       .map(function (p) { return paperHTML(p, { tldr: true, year: true }); }).join("");
   }
 
@@ -455,7 +455,6 @@
 
   /* ---------- Init ---------- */
 
-  renderHighlights();
   renderSelected();
   fitTldr();
   if (document.fonts) document.fonts.ready.then(fitTldr);

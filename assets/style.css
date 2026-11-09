@@ -471,3 +471,31 @@ main > :last-child { padding-bottom: 36px; }
 .news-meta { color: var(--muted); font-size: 12px; font-weight: 600; }
 .news-title { margin-top: 3px; font-weight: 600; }
 .news-summary { margin-top: 3px; color: var(--ink-2); }
+
+/* Selected papers: six compact cards in two rows on desktop. */
+#selected .selected-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+#selected .selected-list > .pub {
+  display: block;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+}
+#selected .selected-list > .pub + .pub { border-top: 1px solid var(--rule); }
+#selected .selected-list .pub-side { margin-bottom: 9px; }
+#selected .selected-list .pub-body { min-width: 0; }
+#selected .selected-list .pub-title { font-size: 14px; line-height: 1.4; }
+@media (max-width: 900px) {
+  #selected .selected-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 580px) {
+  #selected .selected-list { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
